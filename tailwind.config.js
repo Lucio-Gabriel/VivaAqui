@@ -12,7 +12,7 @@ export default {
     theme: {
         extend: {
             fontFamily: {
-                sans: ["Poppins"],
+                "sans": ["Poppins"],
             },
             colors: {
                 primary: "#027333",
