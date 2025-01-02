@@ -14,11 +14,59 @@
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
-    <body class="font-sans antialiased">
-        <div class="min-h-screen bg-gray-100">
-            <livewire:layout.navigation />
+    <body class="font-sans antialiased bg-slate-200">
 
-            <!-- Page Heading -->
+        <div class="flex w-full">
+            <aside class="border-2 hidden sm:flex w-full max-w-[200px] min-h-screen relative bg-white flex-col px-2 py-5">
+                <div class="fixed">
+                    <div>
+                        <h1 class="text-primary text-3xl font-bold">VivaAqui</h1>
+                    </div>
+
+                    <nav class="flex flex-col mt-8 gap-5">
+                        <a href="#"
+                           class="text-gray-500 font-medium hover:text-white hover:bg-secondary/80 p-3 rounded-lg duration-300"
+                        >
+                            Aluguel
+                        </a>
+
+                        <a href="#"
+                           class="text-gray-500 font-medium hover:text-white hover:bg-secondary/80 p-3 rounded-lg duration-300"
+                        >
+                            Compra
+                        </a>
+
+                        <a href="#"
+                           class="text-gray-500 font-medium hover:text-white hover:bg-secondary/80 p-3 rounded-lg duration-300"
+                        >
+                            Servicos
+                        </a>
+
+                        <a href="#"
+                           class="text-gray-500 font-medium hover:text-white hover:bg-secondary/80 p-3 rounded-lg duration-300"
+                        >
+                            Contatos
+                        </a>
+                    </nav>
+                </div>
+
+                <button class="w-11 h-11 rounded-full bg-gray-200 fixed z-30 bottom-5 left-4 hover:bg-secondary/80 duration-300">
+                    <i class="bi bi-telephone-fill" style="font-size:16px;"></i>
+                </button>
+            </aside>
+
+
+            <main>
+                {{ $slot }}
+            </main>
+
+        </div>
+
+        <!-- <div class="min-h-screen">
+
+              <livewire:layout.navigation /
+
+             Page Heading
             @if (isset($header))
                 <header class="bg-white shadow">
                     <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
@@ -27,10 +75,10 @@
                 </header>
             @endif
 
-            <!-- Page Content -->
-            <main>
-                {{ $slot }}
-            </main>
+
+            Page Content
+
         </div>
+        -->
     </body>
 </html>
