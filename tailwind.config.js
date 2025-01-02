@@ -15,7 +15,7 @@ export default {
                 sans: ["Poppins"],
             },
             colors: {
-                primary: "#027333"
+                primary: "#027333",
                 'primary-accent': "#04D939",
                 'secondary': "#03A63C",
                 'blue-gray': "#012340",
