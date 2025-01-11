@@ -58,12 +58,26 @@
             </aside>
 
             <main>
-                <header class="px-3">
-                    <div class="flex w-full items-baseline justify-between">
-                        <h1 class="font-bold text-3xl mt-4 mb-6">{{ $heading }}</h1>
-                        <!-- <span class="hidden md:block text-gray-600">100 casas encontradas</span> -->
-                    </div>
-                </header>
+{{--                <header class="bg-white w-full py-5 px-3 flex flex-row items-center justify-between">--}}
+{{--                    <div class="flex items-center bg-slate-100 px-3 py-2 w-full max-w-xs lg:max-w-full rounded-lg lg:mr-8">--}}
+{{--                        <i class="bi bi-search" style="font-size: 16px;"></i>--}}
+{{--                        <input--}}
+{{--                            type="text"--}}
+{{--                            class="w-full bg-slate-100 px-2 outline-none"--}}
+{{--                            placeholder="Procurando casa?"--}}
+{{--                        />--}}
+{{--                    </div>--}}
+
+{{--                    <div class="flex gap-3 items-center">--}}
+{{--                        <a href="#"--}}
+{{--                           class="w-8 h-8 p-5 bg-slate-100 hidden md:flex items-center justify-center rounded-full"--}}
+{{--                        >--}}
+{{--                            <i class="bi bi-heart-fill text-gray-500" style="font-size: 16px;"></i>--}}
+{{--                        </a>--}}
+
+{{--                    </div>--}}
+{{--                </header>--}}
+
 
                 {{ $slot }}
             </main>
