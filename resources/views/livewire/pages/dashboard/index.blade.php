@@ -5,6 +5,9 @@
                 Casas Disponiveis
             </h1>
             <span class="hidden md:block text-gray-600">Mais de 30 casas encontradas</span>
+            <button class="font-semibold text-white bg-secondary hover:bg-primary duration-300 px-3 py-2 rounded-xl">
+                Cadastrar casa
+            </button>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-4">
@@ -19,8 +22,8 @@
 
                             <div class="flex bg-slate-50/70 group-hover:bg-white duration-300 self-start items-center justify-center gap-3 px-3 py-1 rounded-full">
                                 <div class="flex gap-5">
-                                <button><i class="bi bi-pencil-square text-black" style="font-size: 12px;"></i></button>
-                                <button><i class="bi bi-trash-fill text-black" style="font-size: 12px;"></i></button>
+                                    <button><i class="bi bi-pencil-square text-black" style="font-size: 12px;"></i></button>
+                                    <button><i class="bi bi-trash-fill text-black" style="font-size: 12px;"></i></button>
                                 </div>
                             </div>
                         </div>
