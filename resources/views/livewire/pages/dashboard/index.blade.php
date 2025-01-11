@@ -5,7 +5,11 @@
                 Casas Disponiveis
             </h1>
             <span class="hidden md:block text-gray-600">Mais de 30 casas encontradas</span>
-            <button class="font-semibold text-white bg-secondary hover:bg-primary duration-300 px-3 py-2 rounded-xl">
+            <button
+                type="button"
+                x-on:click="Livewire.navigate('{{ route('register.house') }}')"
+                class="font-semibold text-white bg-secondary hover:bg-primary duration-300 px-3 py-2 rounded-xl"
+            >
                 Cadastrar casa
             </button>
         </div>
