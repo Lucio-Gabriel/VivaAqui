@@ -42,16 +42,13 @@
                     <div class="w-full flex flex-col gap-1 my-2">
                         <h2 class="text-lg font-bold">Apartamento grande</h2>
                         <div>
-                            <p class="text-gray-600 line-through text-sm">R$ 3.000/mes</p>
                             <p class="my-1 font-bold text-indigo-500">R$ 2.200/mes</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="mt-auto">
-                    <span class="font-medium text-sm">100 mts -</span>
-                    <span class="font-medium text-sm">3 quarto -</span>
-                    <span class="font-medium text-sm">2 banheiros</span>
+                    <span class="font-medium text-sm">Description</span>
                 </div>
 
                 <div class="mt-4">
