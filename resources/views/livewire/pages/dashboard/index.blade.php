@@ -47,6 +47,10 @@
                     </div>
                 </div>
 
+                <div class="mb-4">
+                    <span class="font-medium text-sm">Email</span>
+                </div>
+
                 <div class="mt-auto">
                     <span class="font-medium text-sm">Description</span>
                 </div>
