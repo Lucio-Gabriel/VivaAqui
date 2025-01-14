@@ -4,7 +4,7 @@
     </div>
 
     <div class="bg-white p-10 rounded-lg h-[800px] w-[900px] flex flex-col shadow-lg duration-300">
-        <form wire:submit="save">
+        <form wire:submit.prevent="save">
             <div class="space-y-12">
                 <div class="border-b border-gray-900/10 pb-12">
                     <h2 class="text-base/7 font-semibold text-gray-900">Cadastre sua casa</h2>
@@ -87,6 +87,5 @@
                 </button>
             </div>
         </form>
-
     </div>
 </div>

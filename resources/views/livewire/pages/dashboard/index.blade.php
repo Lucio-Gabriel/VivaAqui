@@ -1,19 +1,19 @@
 <div>
-    <section class="w-full px-3 lg:px-6">
-        <div class="flex w-full items-baseline justify-between">
-            <h1 class="font-bold text-3xl mt-4 mb-6">
-                Casas Disponiveis
-            </h1>
-            <span class="hidden md:block text-gray-600">Mais de 30 casas encontradas</span>
-            <button
-                type="button"
-                x-on:click="Livewire.navigate('{{ route('register.house') }}')"
-                class="font-semibold text-white bg-secondary hover:bg-primary duration-300 px-3 py-2 rounded-xl"
-            >
-                Cadastrar casa
-            </button>
-        </div>
+    <div class="flex gap-80 w-full items-baseline justify-between">
+        <h1 class="font-bold text-3xl mt-4 mb-6">
+            Casas Disponiveis
+        </h1>
+        <span class="hidden md:block text-gray-600">Mais de 30 casas encontradas</span>
+        <button
+            type="button"
+            x-on:click="Livewire.navigate('{{ route('register.house') }}')"
+            class="font-semibold text-white bg-secondary hover:bg-primary duration-300 px-3 py-2 rounded-xl"
+        >
+            Cadastrar casa
+        </button>
+    </div>
 
+    <section class="w-full px-3 lg:px-6">
         <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-4">
             @foreach($this->houses as $house)
             <a href="#" class="bg-white p-3 rounded-lg min-h-[400px] relative flex flex-col hover:shadow-lg duration-300">
@@ -27,7 +27,12 @@
 
                             <div class="flex bg-slate-50/70 group-hover:bg-white duration-300 self-start items-center justify-center gap-3 px-3 py-1 rounded-full">
                                 <div class="flex gap-5">
-                                    <button><i class="bi bi-pencil-square text-black" style="font-size: 12px;"></i></button>
+                                    <button
+                                        type="button"
+                                        x-on:click="Livewire.navigate('{{ route('edit.house', $house) }}')"
+                                    >
+                                        <i class="bi bi-pencil-square text-black" style="font-size: 12px;"></i>
+                                    </button>
                                     <button><i class="bi bi-trash-fill text-black" style="font-size: 12px;"></i></button>
                                 </div>
                             </div>
