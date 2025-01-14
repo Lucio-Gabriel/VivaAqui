@@ -15,13 +15,14 @@
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-4">
+            @foreach($this->houses as $house)
             <a href="#" class="bg-white p-3 rounded-lg min-h-[400px] relative flex flex-col hover:shadow-lg duration-300">
                 <div>
                     <div class="group overflow-hidden rounded-lg">
                         <div class="flex justify-between gap-44 absolute z-40 top-5 left-5">
                             <div class="flex bg-slate-50/70 group-hover:bg-white duration-300 self-start items-center justify-center gap-3 px-3 py-1 rounded-full">
                                 <i class="bi bi-map-fill text-black" style="font-size: 12px;"></i>
-                                <span class="font-medium text-sm">Belem - PA</span>
+                                <span class="font-medium text-sm">{{ $house->city }}</span>
                             </div>
 
                             <div class="flex bg-slate-50/70 group-hover:bg-white duration-300 self-start items-center justify-center gap-3 px-3 py-1 rounded-full">
@@ -40,19 +41,19 @@
                     </div>
 
                     <div class="w-full flex flex-col gap-1 my-2">
-                        <h2 class="text-lg font-bold">Apartamento grande</h2>
+                        <h2 class="text-lg font-bold">{{ $house->title }}</h2>
                         <div>
-                            <p class="my-1 font-bold text-indigo-500">R$ 2.200/mes</p>
+                            <p class="my-1 font-bold text-indigo-500">R$<span>{{ $house->price }}</span>/mes</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="mb-4">
-                    <span class="font-medium text-sm">Email</span>
+                    <span class="font-medium text-sm">{{ $house->email }}</span>
                 </div>
 
                 <div class="mt-auto">
-                    <span class="font-medium text-sm">Description</span>
+                    <span class="font-medium text-sm">{{ $house->description }}</span>
                 </div>
 
                 <div class="mt-4">
@@ -61,6 +62,7 @@
                     </button>
                 </div>
             </a>
+            @endforeach
         </div>
     </section>
 </div>
