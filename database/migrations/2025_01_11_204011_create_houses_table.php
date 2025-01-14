@@ -10,9 +10,11 @@ return new class extends Migration
     {
         Schema::create('houses', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
+            $table->string('title');
             $table->string('city');
             $table->integer('price');
+            $table->string('email');
+            $table->string('description');
             $table->timestamps();
         });
     }
