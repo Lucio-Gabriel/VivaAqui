@@ -10,8 +10,10 @@ class Create extends Component
 {
     #[Validate('required')]
     public $title;
+
     #[Validate('required')]
     public $city;
+
     #[Validate('required')]
     public $price;
 
@@ -25,7 +27,8 @@ class Create extends Component
     {
         $this->validate();
 
-        House::create(
+        House::create
+        (
             $this->only(['title', 'city', 'price','email', 'description'])
         );
 
