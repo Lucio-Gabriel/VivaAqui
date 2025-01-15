@@ -67,25 +67,25 @@
                             </div>
                             <p class="mt-3 text-sm/6 text-gray-600">Deixe mais detalhes sobre sua casa para atrair mais clientes!</p>
                         </div>
+                    </div>
+
+
                 </div>
 
-
-            </div>
-
-            <div class="mt-6 flex items-center justify-end gap-x-6">
-                <button
-                    type="button" class="text-sm/6 font-semibold text-blue-gray focus:outline-secondary"
-                    x-on:click="Livewire.navigate('{{ route('dashboard') }}')"
-                >
-                    Cancelar
-                </button>
-                <button
-                    type="submit"
-                    class="text-sm/6 font-semibold text-white bg-secondary hover:bg-primary  duration-300 px-3 py-2 rounded-xl"
-                >
-                    Cadastrar casa
-                </button>
-            </div>
+                <div class="mt-6 flex items-center justify-end gap-x-6">
+                    <button
+                        type="button" class="text-sm/6 font-semibold text-blue-gray focus:outline-secondary"
+                        x-on:click="Livewire.navigate('{{ route('dashboard') }}')"
+                    >
+                        Cancelar
+                    </button>
+                    <button
+                        type="submit"
+                        class="text-sm/6 font-semibold text-white bg-secondary hover:bg-primary  duration-300 px-3 py-2 rounded-xl"
+                    >
+                        Salvar edição
+                    </button>
+                </div>
         </form>
     </div>
 </div>
