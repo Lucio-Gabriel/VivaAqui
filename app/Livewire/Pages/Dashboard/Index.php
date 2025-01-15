@@ -16,6 +16,11 @@ class Index extends Component
         return House::get();
     }
 
+    public function deleteHouse(int $houseId)
+    {
+        House::findOrFail($houseId)->delete();
+    }
+
     public function render()
     {
         return view('livewire.pages.dashboard.index')

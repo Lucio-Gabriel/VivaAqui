@@ -33,7 +33,10 @@
                                     >
                                         <i class="bi bi-pencil-square text-black" style="font-size: 12px;"></i>
                                     </button>
-                                    <button><i class="bi bi-trash-fill text-black" style="font-size: 12px;"></i></button>
+                                    <button
+                                        wire:click="deleteHouse({{ $house->id }})"
+                                    >
+                                        <i class="bi bi-trash-fill text-black" style="font-size: 12px;"></i></button>
                                 </div>
                             </div>
                         </div>
