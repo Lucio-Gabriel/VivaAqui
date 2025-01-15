@@ -1,5 +1,5 @@
 <div>
-    <div class="flex gap-80 w-full items-baseline justify-between">
+    <div class="flex w-full items-baseline justify-between pr-8 pl-8">
         <h1 class="font-bold text-3xl mt-4 mb-6">
             Casas Disponiveis
         </h1>

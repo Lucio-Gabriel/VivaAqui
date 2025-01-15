@@ -26,7 +26,7 @@
                     </div>
 
                     <nav class="flex flex-col mt-8 gap-5">
-                        <a href="#"
+                        <a href="{{ route('dashboard') }}"
                            class="text-gray-500 font-medium hover:text-white hover:bg-secondary/80 p-3 rounded-lg duration-300"
                         >
                             Aluguel
