@@ -1,5 +1,6 @@
 <?php
 
+use App\Livewire\Pages\Dashboard\Index;
 use App\Livewire\Pages\RegisterHouse\Create;
 use App\Livewire\Pages\RegisterHouse\Edit;
 use App\Models\House;
@@ -48,7 +49,6 @@ test('should be required', function () {
 });
 
 it('should be able to update a houses', function () {
-
     $house = House::factory()->create([
         'title' => 'Casa 1',
         'city' => 'Cidade 1',
@@ -72,6 +72,15 @@ it('should be able to update a houses', function () {
         ->price->toBe(200)
         ->email->toBe('testenovo@gmail.com')
         ->description->toBe('Descricao atualizada');
+});
+
+it('should be able to delete a product', function () {
+   $house = House::factory()->create();
+
+   livewire(Index::class)
+       ->call('deleteHouse', $house->id);
+
+   expect(House::find($house->id))->toBeNull();
 });
 
 
