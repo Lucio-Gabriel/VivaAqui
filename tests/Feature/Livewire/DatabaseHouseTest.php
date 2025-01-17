@@ -1,6 +1,8 @@
 <?php
 
 use App\Livewire\Pages\RegisterHouse\Create;
+use App\Livewire\Pages\RegisterHouse\Edit;
+use App\Models\House;
 use Livewire\Livewire;
 use function Pest\Laravel\assertDatabaseCount;
 use function Pest\Laravel\assertDatabaseHas;
@@ -43,6 +45,33 @@ test('should be required', function () {
            'email' => 'required',
            'description' => 'required',
         ]);
+});
+
+it('should be able to update a houses', function () {
+
+    $house = House::factory()->create([
+        'title' => 'Casa 1',
+        'city' => 'Cidade 1',
+        'price' => 100,
+        'email' => 'teste@gmail.com',
+        'description' => 'description',
+    ]);
+
+    Livewire(Edit::class, ['house' => $house])
+        ->set('title', 'Casa atualizada')
+        ->set('city', 'Cidade atualizada')
+        ->set('price', 200)
+        ->set('email', 'testenovo@gmail.com')
+        ->set('description', 'Descricao atualizada')
+        ->call('save');
+
+    expect($house)
+        ->refresh()
+        ->title->toBe('Casa atualizada')
+        ->city->toBe('Cidade atualizada')
+        ->price->toBe(200)
+        ->email->toBe('testenovo@gmail.com')
+        ->description->toBe('Descricao atualizada');
 });
 
 
