@@ -27,3 +27,22 @@ it('should be able o create a houses', function () {
 
     assertDatabaseCount('houses', 1);
 });
+
+test('should be required', function () {
+    Livewire(Create::class)
+        ->set('title', null)
+        ->set('city', null)
+        ->set('price', null)
+        ->set('email', null)
+        ->set('description', null)
+        ->call('save')
+        ->assertHasErrors([
+           'title' => 'required',
+           'city' => 'required',
+           'price' => 'required',
+           'email' => 'required',
+           'description' => 'required',
+        ]);
+});
+
+
