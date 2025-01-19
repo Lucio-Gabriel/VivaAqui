@@ -12,7 +12,14 @@
                 x-on:click="Livewire.navigate('{{ route('register.house') }}')"
                 class="font-semibold text-white bg-secondary hover:bg-primary duration-300 px-6 py-2 rounded-xl"
             >
-                Cadastrar casa
+                <div class="flex">
+                                <span>
+                                    Cadastrar casa
+                                </span>
+                    <div class="w-5 h-5 ml-2">
+                        <x-svg.house/>
+                    </div>
+                </div>
             </button>
         </div>
     </div>
@@ -70,9 +77,16 @@
                     <span class="font-medium text-sm">{{ $house->description }}</span>
                 </div>
 
-                <div class="mt-4">
+                <div class="flex mt-4">
                     <button class="font-semibold text-white bg-secondary hover:bg-primary duration-300 px-3 py-2 rounded-xl">
-                        ALugar Quarto
+                        <div class="flex">
+                                <span>
+                                    Alugar quarto
+                                </span>
+                            <div class="w-5 h-5 ml-2 mt-0.5">
+                                <x-svg.check-circle/>
+                            </div>
+                        </div>
                     </button>
                 </div>
             </a>
