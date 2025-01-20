@@ -29,25 +29,40 @@
                         <a href="{{ route('dashboard') }}"
                            class="text-gray-500 font-medium hover:text-white hover:bg-secondary/80 p-3 rounded-lg duration-300"
                         >
-                            Aluguel
+                            <div class="flex">
+                                <span>
+                                    Aluguel
+                                </span>
+                                <div class="w-5 h-5 ml-2">
+                                    <x-svg.house/>
+                                </div>
+                            </div>
                         </a>
 
                         <a href="#"
                            class="text-gray-500 font-medium hover:text-white hover:bg-secondary/80 p-3 rounded-lg duration-300"
                         >
-                            Compra
+                            <div class="flex">
+                                <span>
+                                    Serviços
+                                </span>
+                                <div class="w-5 h-5 ml-2">
+                                    <x-svg.clipboard/>
+                                </div>
+                            </div>
                         </a>
 
                         <a href="#"
                            class="text-gray-500 font-medium hover:text-white hover:bg-secondary/80 p-3 rounded-lg duration-300"
                         >
-                            Servicos
-                        </a>
-
-                        <a href="#"
-                           class="text-gray-500 font-medium hover:text-white hover:bg-secondary/80 p-3 rounded-lg duration-300"
-                        >
-                            Contatos
+                            <div class="flex">
+                                <span>
+                                    Contatos
+                                </span>
+                                <div class="w-5 h-5 ml-2">
+                                    <x-svg.phone/>
+                                </div>
+                            </div>
                         </a>
                     </nav>
                 </div>

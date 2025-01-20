@@ -1,16 +1,27 @@
 <div>
-    <div class="flex w-full items-baseline justify-between pr-8 pl-8">
-        <h1 class="font-bold text-3xl mt-4 mb-6">
-            Casas Disponiveis
-        </h1>
-        <span class="hidden md:block text-gray-600">Mais de 30 casas encontradas</span>
-        <button
-            type="button"
-            x-on:click="Livewire.navigate('{{ route('register.house') }}')"
-            class="font-semibold text-white bg-secondary hover:bg-primary duration-300 px-3 py-2 rounded-xl"
-        >
-            Cadastrar casa
-        </button>
+    <div class="flex lg:gap-[920px]">
+        <div class="items-baseline pr-8 pl-8">
+            <h1 class="font-bold text-3xl mt-4 mb-6">
+                Casas Disponiveis
+            </h1>
+        </div>
+        <div class="mt-4">
+{{--            <span class="hidden md:block text-gray-600">Mais de 30 casas encontradas</span>--}}
+            <button
+                type="button"
+                x-on:click="Livewire.navigate('{{ route('register.house') }}')"
+                class="font-semibold text-white bg-secondary hover:bg-primary duration-300 px-6 py-2 rounded-xl"
+            >
+                <div class="flex">
+                                <span>
+                                    Cadastrar casa
+                                </span>
+                    <div class="w-5 h-5 ml-2">
+                        <x-svg.house/>
+                    </div>
+                </div>
+            </button>
+        </div>
     </div>
 
     <section class="w-full px-3 lg:px-6">
@@ -25,18 +36,20 @@
                                 <span class="font-medium text-sm">{{ $house->city }}</span>
                             </div>
 
-                            <div class="flex bg-slate-50/70 group-hover:bg-white duration-300 self-start items-center justify-center gap-3 px-3 py-1 rounded-full">
-                                <div class="flex gap-5">
-                                    <button
-                                        type="button"
-                                        x-on:click="Livewire.navigate('{{ route('edit.house', $house) }}')"
-                                    >
-                                        <i class="bi bi-pencil-square text-black" style="font-size: 12px;"></i>
-                                    </button>
-                                    <button
-                                        wire:click="deleteHouse({{ $house->id }})"
-                                    >
-                                        <i class="bi bi-trash-fill text-black" style="font-size: 12px;"></i></button>
+                            <div class="pl-6">
+                                <div class="flex bg-slate-50/70 group-hover:bg-white duration-300 self-start items-center justify-center gap-3 px-3 py-1 rounded-full">
+                                    <div class="flex gap-5">
+                                        <button
+                                            type="button"
+                                            x-on:click="Livewire.navigate('{{ route('edit.house', $house) }}')"
+                                        >
+                                            <i class="bi bi-pencil-square text-black" style="font-size: 12px;"></i>
+                                        </button>
+                                        <button
+                                            wire:click="deleteHouse({{ $house->id }})"
+                                        >
+                                            <i class="bi bi-trash-fill text-black" style="font-size: 12px;"></i></button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -64,9 +77,16 @@
                     <span class="font-medium text-sm">{{ $house->description }}</span>
                 </div>
 
-                <div class="mt-4">
+                <div class="flex mt-4">
                     <button class="font-semibold text-white bg-secondary hover:bg-primary duration-300 px-3 py-2 rounded-xl">
-                        ALugar Quarto
+                        <div class="flex">
+                                <span>
+                                    Alugar quarto
+                                </span>
+                            <div class="w-5 h-5 ml-2 mt-0.5">
+                                <x-svg.check-circle/>
+                            </div>
+                        </div>
                     </button>
                 </div>
             </a>
