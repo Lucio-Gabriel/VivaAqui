@@ -16,6 +16,10 @@ Route::get('/edit-houses/{house}', \App\Livewire\Pages\RegisterHouse\Edit::class
     ->middleware(['auth', 'verified'])
     ->name('edit.house');
 
+Route::get('/services', \App\Livewire\Pages\Services\Index::class)
+    ->middleware(['auth', 'verified'])
+        ->name('services.house');
+
 Route::view('profile', 'profile')
     ->middleware(['auth'])
     ->name('profile');
