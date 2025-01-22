@@ -24,5 +24,7 @@ export default {
         },
     },
 
+    //ref = https://dribbble.com/shots/14000006-Contact-Us-Design-Daily-UI-028
+
     plugins: [forms],
 };

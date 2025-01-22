@@ -52,7 +52,7 @@
                             </div>
                         </a>
 
-                        <a href="#"
+                        <a href="{{ route('contacts.house') }}"
                            class="text-gray-500 font-medium hover:text-white hover:bg-secondary/80 p-3 rounded-lg duration-300"
                         >
                             <div class="flex">

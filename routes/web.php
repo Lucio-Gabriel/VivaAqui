@@ -20,6 +20,10 @@ Route::get('/services', \App\Livewire\Pages\Services\Index::class)
     ->middleware(['auth', 'verified'])
         ->name('services.house');
 
+Route::get('/contacts', \App\Livewire\Pages\Contacts\Index::class)
+    ->middleware(['auth', 'verified'])
+        ->name('contacts.house');
+
 Route::view('profile', 'profile')
     ->middleware(['auth'])
     ->name('profile');
