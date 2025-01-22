@@ -19,6 +19,7 @@ export default {
                 'primary-accent': "#04D939",
                 'secondary': "#03A63C",
                 'blue-gray': "#012340",
+                'gray-black': "#0D0D0D"
             },
         },
     },

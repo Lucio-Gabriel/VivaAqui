@@ -9,7 +9,7 @@
     </div>
 
     <div class="mt-7 flex justify-center items-center gap-6 pl-60">
-        <div class="bg-[#0D0D0D] w-80 h-72 rounded-lg shadow-xl">
+        <div class="bg-gray-black w-80 h-72 rounded-lg shadow-xl">
             <div class="bg-primary-accent w-16 h-16 mt-10 ml-5 rounded-full fixed text-center">
                 <div class="mt-3.5">
                     <i class="text-gray-200 bi bi-wrench" style="font-size:26px;"></i>
@@ -22,7 +22,7 @@
         </div>
 
         <div class="bg-secondary w-80 h-72 rounded-lg shadow-xl mt-10">
-            <div class="bg-[#0D0D0D] w-16 h-16 mt-10 ml-5 rounded-full fixed text-center">
+            <div class="bg-gray-black w-16 h-16 mt-10 ml-5 rounded-full fixed text-center">
                 <div class="mt-3.5">
                     <i class="text-white bi bi-eraser" style="font-size:26px;"></i>
                 </div>
@@ -33,7 +33,7 @@
             </div>
         </div>
 
-        <div class="bg-[#0D0D0D] w-80 h-72 rounded-lg shadow-xl">
+        <div class="bg-gray-black w-80 h-72 rounded-lg shadow-xl">
             <div class="bg-primary-accent w-16 h-16 mt-10 ml-5 rounded-full fixed text-center">
                 <div class="mt-3.5">
                     <i class="text-gray-200 bi bi-bar-chart-line-fill" style="font-size:26px;"></i>
