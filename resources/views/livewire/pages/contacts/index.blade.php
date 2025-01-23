@@ -29,7 +29,7 @@
         </section>
 
         <section class="w-full flex-1 flex justify-center items-center flex-col gap-4 p-4 pl-72 mt-3">
-            <h1 class="text-2xl font-semibold text-primary">Formulario para contato</h1>
+            <h1 class="text-2xl font-semibold text-primary">Formulário para contato</h1>
             <div class="bg-white w-96 h-96 drop-shadow-2xl">
                 <form>
                     <div class="p-6">
