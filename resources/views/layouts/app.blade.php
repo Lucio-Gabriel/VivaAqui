@@ -22,7 +22,11 @@
             <aside class="border-2 hidden sm:flex w-full max-w-[200px] min-h-screen relative bg-white flex-col px-2 py-5">
                 <div class="fixed">
                     <div>
-                        <h1 class="text-primary text-3xl font-bold">VivaAqui</h1>
+                        <a href="{{ route('dashboard') }}"
+                        class="text-primary text-3xl font-bold"
+                        >
+                            VivaAqui
+                    </a>
                     </div>
 
                     <nav class="flex flex-col mt-8 gap-5">
@@ -52,7 +56,7 @@
                             </div>
                         </a>
 
-                        <a href="#"
+                        <a href="{{ route('contacts.house') }}"
                            class="text-gray-500 font-medium hover:text-white hover:bg-secondary/80 p-3 rounded-lg duration-300"
                         >
                             <div class="flex">
