@@ -22,7 +22,11 @@
             <aside class="border-2 hidden sm:flex w-full max-w-[200px] min-h-screen relative bg-white flex-col px-2 py-5">
                 <div class="fixed">
                     <div>
-                        <h1 class="text-primary text-3xl font-bold">VivaAqui</h1>
+                        <a href="{{ route('dashboard') }}"
+                        class="text-primary text-3xl font-bold"
+                        >
+                            VivaAqui
+                    </a>
                     </div>
 
                     <nav class="flex flex-col mt-8 gap-5">
