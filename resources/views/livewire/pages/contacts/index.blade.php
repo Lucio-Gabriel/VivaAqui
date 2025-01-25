@@ -30,7 +30,7 @@
 
         <section class="w-full flex-1 flex justify-center items-center flex-col gap-4 p-4 pl-72 mt-3">
             <h1 class="text-2xl font-semibold text-primary">Formulário para contato</h1>
-            <div class="bg-white w-96 h-96 drop-shadow-2xl">
+            <div class="bg-white w-96 h-[420px] drop-shadow-2xl">
                 <form wire:submit.prevent="save">
                     <div class="p-6">
                         <label>
@@ -38,6 +38,9 @@
                         </label>
                         <div class="mt-2">
                             <input type="email" wire:model="email" name="email" id="email" class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-secondary sm:text-sm/6">
+                            <div class="mt-2 text-red-500">
+                                @error('email') <span class="error">{{ $message }}</span>@enderror
+                            </div>
                         </div>
                     </div>
 
@@ -47,6 +50,9 @@
                         </label>
                         <div class="mt-2">
                             <textarea name="description" wire:model="description" id="description" rows="3" class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-secondary sm:text-sm/6"></textarea>
+                            <div class="mt-2 text-red-500">
+                                @error('description') <span class="error">{{ $message }}</span>@enderror
+                            </div>
                         </div>
                     </div>
 
