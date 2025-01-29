@@ -10,6 +10,8 @@ class HousesSeeder extends Seeder
 {
     public function run(): void
     {
+        // Command => php artisan db:seed --class=HousesSeeder
+
         DB::table('houses')->insert([
             [
                 'title' => 'Casa Moderna no Centro',
