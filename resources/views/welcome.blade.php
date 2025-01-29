@@ -18,14 +18,6 @@
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
     <body class="bg-slate-200">
-{{--        <a href="{{ route('login') }}">--}}
-{{--            login--}}
-{{--        </a>--}}
-
-{{--        <a href="{{ route('register') }}">--}}
-{{--            registrar-se--}}
-{{--        </a>--}}
-
         <main class="w-full min-h-screen flex flex-col md:flex-row items-center justify-center mx-auto">
             <section class="w-full flex-1 flex flex-col items-center justify-center">
                 <div class="pl-64">
@@ -38,6 +30,7 @@
                         alt="logo viva aqui"
                         class="w-96 h-96"
                     />
+
                 </div>
             </section>
 
