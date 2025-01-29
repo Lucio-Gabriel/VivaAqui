@@ -64,7 +64,7 @@
                     <div class="w-full flex flex-col gap-1 my-2">
                         <h2 class="text-lg font-bold">{{ $house->title }}</h2>
                         <div>
-                            <p class="my-1 font-bold text-indigo-500">R$<span>{{ $house->price }}</span>/mes</p>
+                            <p class="my-1 font-bold text-indigo-500">R$<span>{{ $house->price }}</span>/mês</p>
                         </div>
                     </div>
                 </div>
