@@ -41,7 +41,7 @@
                     </h1>
 
                     <p class="text-gray-700 text-center mt-3 font-semibold">
-                        Encontre casas e kitnets Comece agora!
+                        Encontre casas e kitnets Online agora!
                     </p>
 
                     <div class="flex flex-col gap-4 mt-4">
